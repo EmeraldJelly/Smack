@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CreateAccountVC.swift
 //  Smack
 //
 //  Created by Nicholas Brewster on 1/13/18.
@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CreateAccountVC: UIViewController {
+    
+    //Outlets
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func closeBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: UNWIND, sender: nil)
+    }
 }
-
